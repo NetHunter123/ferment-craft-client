@@ -1,0 +1,75 @@
+.free_lesson {
+    &__wrap {
+        background-color: #fff8ea;
+        border: 1px solid #8fb146;
+        color: white;
+        padding: 20px 40px 50px 40px;
+        border-radius: 15px;
+        max-width: 550px;
+        margin: 0 auto;
+        color: #333333;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__form_title {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_btn{
+            height: auto;
+            overflow: visible;
+
+            position: relative;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px;
+            border: none;
+
+            transition: background-color, color 0.2s ease-in-out;
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+            border-radius: 35px;
+
+
+            //padding: 15px;
+            max-width: 300px;
+            width: 100%;
+            margin: 20px auto 0;
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+            @media (hover: hover) {
+                &:hover:before {
+                    display: block;
+                    /*width: 107%;*/
+                    width: calc(100% + 30px);
+                    /*height: 130%;*/
+                    height: calc(100% + 20px);
+                }
+            }
+
+            &:active:before {
+                display: block;
+                /*width: 107%;*/
+                width: calc(100% + 30px);
+                /*height: 130%;*/
+                height: calc(100% + 20px);
+            }
+        }
+    }
+
+    &__notifi{
+        padding: 0 !important;
+    }
+}

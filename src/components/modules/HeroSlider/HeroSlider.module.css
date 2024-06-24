@@ -1,0 +1,19 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+
+
+    & h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font-size: 32px;
+        font-weight: 400;
+    }
+}

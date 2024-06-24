@@ -9,8 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.9.2",
+    "@mantine/form": "^7.10.1",
+    "@mantine/hooks": "^7.9.2",
+    "autoprefixer": "^10.4.19",
+    "embla-carousel-autoplay": "^8.1.5",
+    "embla-carousel-react": "^8.1.5",
+    "next": "14.2.3",
+    "nextjs-progressbar": "^0.0.16",
+    "postcss-nested": "^6.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-icons": "^5.2.1",
+    "react-input-mask": "^2.0.4"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "^1.15.0",
+    "postcss-simple-vars": "^7.0.1"
   }
 }

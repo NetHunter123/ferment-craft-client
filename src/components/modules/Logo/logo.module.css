@@ -1,0 +1,12 @@
+.logo {
+    &__root {
+        font-size: 32px;
+        font-weight: 800;
+        font-family: 'Inter', sans-serif;
+        color: black;
+
+        span {
+            color: var(--accent-c);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.header {
+    height: var(--header-h);
+    background-color: var(--bg-light-c);
+    position: relative;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        backdrop-filter: blur(1px);
+        z-index: 2;
+    }
+
+    &__logo {
+
+    }
+
+    &__decor {
+        z-index: 1;
+        position: absolute;
+        left: 18%;
+        top: -10px;
+        height: calc(var(--header-h) - 10px);
+        @media screen and (max-width: 992px) {
+            left: 28%;
+        }
+    }
+
+    &__nav {
+
+        /*@media screen and (max-width: 992px) {
+            display: none;
+        }*/
+    }
+}

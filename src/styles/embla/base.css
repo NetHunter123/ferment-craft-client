@@ -1,0 +1,5 @@
+.theme {
+    --detail-medium-contrast: rgb(234, 234, 234);
+    --detail-medium-contrast-rgb-value: 234, 234, 234;
+    --text-high-contrast-rgb-value: 49, 49, 49;
+}
