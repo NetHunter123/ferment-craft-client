@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './hero.module.css';
 import Image from "next/image";
 import HeroSlider from "@/components/modules/HeroSlider/HeroSlider";
+import {Grid} from "@mantine/core";
 
 const Hero = () => {
 	return (
@@ -15,28 +16,35 @@ const Hero = () => {
 					width={500}
 					height={300}
 					sizes="100vw"
-					// style={{
-					// 	width: '100%',
-					// 	height: '500px',
-					// }}
 					quality={100}
-					// layout="fill"
-					// placeholder="blur"
 				/>
 				<div className={`${styles.top_slider} container-c`}>
-					<div className={`${styles.top_slider_inner} `}>
-						<HeroSlider/>
-					</div>
+					<Grid container gutter={{base: 0}}>
+						<Grid.Col span={{base: 4.3}}>
+							<div className={`${styles.top_slider_inner} `}>
+								<HeroSlider/>
+							</div>
+						</Grid.Col>
+					</Grid>
 				</div>
 			</div>
 			<div className={`${styles.hero__bottom} container-c`}>
-				<p className={styles.hero__accent_text}><span>Ми прагнемо</span> до сталого розвитку та дбаємо про навколишнє
-					середовище.</p>
-				<div className={styles.hero__desc_text}>
-					<span>Вітаємо!</span>
-					<p>Ми — команда експертів, яка займається виробництвом поживних добавок високої якості. Наша місія полягає в
-						тому, щоб зробити ваше життя здоровішим та активнішим.</p>
-				</div>
+				<Grid container gutter={{base: 0}}>
+					<Grid.Col span={{base: 4.3}}>
+						<p className={styles.hero__accent_text}><span>Ми прагнемо</span> до сталого розвитку та дбаємо про
+							навколишнє
+							середовище.</p>
+					</Grid.Col>
+					<Grid.Col span={{base: 7.6}}>
+						<div className={styles.hero__desc_text}>
+							<span>Вітаємо!</span>
+							<p>Ми — команда експертів, яка займається виробництвом поживних добавок високої якості. Наша місія полягає
+								в
+								тому, щоб зробити ваше життя здоровішим та активнішим.</p>
+						</div>
+					</Grid.Col>
+				</Grid>
+			
 			</div>
 		</section>
 	);

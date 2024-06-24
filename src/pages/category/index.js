@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './category-page.module.css';
 import {MdAddShoppingCart} from "react-icons/md";
-import Link from "next/link";
 
-	const products = [
+
+const products = [
 		{
 			image: "./unikons.jpg",
 			title: "UNIKON FERMENT",
@@ -40,41 +40,8 @@ import Link from "next/link";
 		}
 		,
 	]
-	
-	//
-	// const categories = [
-	// 	{
-	// 		title: "Риба",
-	// 		image: "./fish.png",
-	// 		desc: "Комплексні харчові добавки, консерванти та антоксиданти для риби та рибних виробів"
-	// 	}, {
-	// 		title: "М'ясо",
-	// 		image: "./meat.png",
-	// 		desc: "Консерванти для м'яса, консерванти для ковбаси. М'ясопереробка"
-	// 	}, {
-	// 		title: "Випічка",
-	// 		image: "./backery.png",
-	// 		desc: "Кондитерські та хлібобулочні вироби"
-	// 	}, {
-	// 		title: "Пиво, напої, вода",
-	// 		image: "./drinks.png",
-	// 		desc: "Ароматизатори, смакопідсюлювачі, барвники "
-	// 	}
-	// ]
 
 const Category = () => {
-	
-	const {
-		isPending,
-		error,
-		data: products,
-		isFetching
-	} = useQuery({
-		queryKey: ['productsData'],
-		queryFn: () =>
-			getProductsFx()
-				.then((res) => res.data.data),
-	})
 	
 	return (
 		<div className={styles.products__page}>
@@ -98,14 +65,7 @@ const Category = () => {
 				 		</div>
 				 	</>)
 				 })}
-				{/*{categories.map(({title, image, desc}) => {*/}
-				{/*	return (*/}
-				{/*		<Link className={styles.category__card} href={`/products/${title}`}>*/}
-				{/*			<img className={styles.category__img} src={image} alt={title}/>*/}
-				{/*			<h3 className={styles.category__title}>{title}</h3>*/}
-				{/*			<div className={styles.category__desc}>{desc}</div>*/}
-				{/*		</Link>)*/}
-				{/*})}*/}
+				
 			</div>
 		</div>
 	);
